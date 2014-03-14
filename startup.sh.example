@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export HUBOT_IRC_SERVER="irc.freenode.net"
+export HUBOT_IRC_ROOMS="#room password" 
+export HUBOT_IRC_NICK="botname"
+export HUBOT_IRC_UNFLOOD="true"
+
+bin/hubot -a irc --name botname 
