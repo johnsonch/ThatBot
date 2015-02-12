@@ -1,3 +1,6 @@
 authentication.yml
 nohup.out
 vendor/bundle
+node_modules
+.DS_Store*
+startup.sh
