@@ -1,0 +1,2 @@
+https://www.thatconference.com/api3/Session/GetAcceptedSessions
+https://www.thatconference.com/api3/speakers/getspeakers
