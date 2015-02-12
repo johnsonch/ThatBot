@@ -5,12 +5,13 @@ Lita.configure do |config|
   config.robot.name = "#{creds["bot_name"]}"
   config.robot.log_level = :info
   config.robot.adapter = :shell
-  config.redis.host = "#{creds["bot_name"]}"
+  config.redis.host = "#{creds["redis_host"]}"
+  config.http.port = 8181
 
   config.robot.name = "#{creds["bot_name"]}"
   config.robot.adapter = :irc
   config.adapters.irc.server = "irc.freenode.net"
-  config.adapters.irc.channels = creds["weather_api_key"].split
+  config.adapters.irc.channels = creds["irc_channels"].split
   config.adapters.irc.user = "#{creds["bot_name"]}"
   config.adapters.irc.realname = "#{creds["bot_name"]}"
   config.adapters.irc.cinch = lambda do |cinch_config|

@@ -11,12 +11,6 @@ PATH
     lita-ping (0.0.1)
       lita (>= 4.0)
 
-PATH
-  remote: lita-repeater
-  specs:
-    lita-repeater (0.0.1)
-      lita (>= 4.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -76,7 +70,6 @@ DEPENDENCIES
   lita-karma
   lita-memegen
   lita-ping!
-  lita-repeater!
   lita-shipit
   lita-static-meme!
   lita-weather
