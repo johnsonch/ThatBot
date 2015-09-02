@@ -1,7 +1,10 @@
 module Lita
   module Handlers
     class Repeater < Handler
-      route(/(a|A)ll:/, :reply, command: true, help: {
+      include Cinch::Plugin
+
+
+      route(/(a|A)ll:/, :reply, command: false, help: {
         "all:" => "Pings everyone in the room"
       })
 
